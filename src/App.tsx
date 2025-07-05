@@ -8,16 +8,18 @@ import Team from './components/Team'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-background text-text">
       <Header />
-      <Hero />
-      <Services />
-      <About />
-      <CaseStudies />
-      <Team />
-      <Contact />
+      <main>
+        <Hero />
+        <Services />
+        <About />
+        <CaseStudies />
+        <Team />
+        <Contact />
+      </main>
       <Footer />
     </div>
   )
